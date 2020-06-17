@@ -80,6 +80,7 @@
       2,
       "^(err|error|anySpecificError)$"
     ],
+    "implicit-arrow-linebreak": 0,
     "import/prefer-default-export": "off",
     "indent": [
       2,
@@ -233,10 +234,7 @@
     ],
     "one-var": 0,
     "operator-assignment": 0,
-    "operator-linebreak": [
-      2,
-      "after"
-    ],
+    "operator-linebreak": 0,
     "padded-blocks": 0,
     "prefer-const": 2,
     "quote-props": 0,
@@ -292,7 +290,7 @@
     "react/react-in-jsx-scope": 2,
     "react/self-closing-comp": 2,
     "react/sort-comp": 0,
-    "react/jsx-wrap-multilines": 1,
+    "react/jsx-wrap-multilines": 0,
     "semi-spacing": 0,
     "sort-vars": 0,
     "space-before-blocks": [
