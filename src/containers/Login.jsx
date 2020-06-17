@@ -6,7 +6,7 @@ import '../assets/styles/components/Login.scss'
 import googleIcon from '../assets/static/google-icon.png'
 import twitterIcon from '../assets/static/twitter-icon.png'
 
-const Login = () => {
+const Login = (props) => {
   // Generamos un estado sin necesidad de usar class
   // form: donde se guarda la información, setValues: función que se encarga de guardar los valores
   const [form, setValues] = useState({
