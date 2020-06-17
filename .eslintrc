@@ -80,6 +80,7 @@
       2,
       "^(err|error|anySpecificError)$"
     ],
+    "import/prefer-default-export": "off",
     "indent": [
       2,
       2,
@@ -167,6 +168,7 @@
       2,
       false
     ],
+    "no-multi-assign": 0,
     "no-multi-spaces": 2,
     "no-multi-str": 0,
     "no-multiple-empty-lines": [
