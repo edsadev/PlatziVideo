@@ -7,14 +7,14 @@ import CarouselItem from '../components/CarouselItem'
 import Footer from '../components/Footer'
 import useInitialState from '../hooks/useInitialState'
 // eslint-disable-next-line import/no-unresolved
-import '../assets/styles/App.scss'
+import '../assets/styles/Home.scss'
 
 const API = 'http://localhost:3000/initalState'
 
-const App = () => {
+const Home = () => {
   const initialState = useInitialState(API)
   return (
-    <div className='App'>
+    <div className='Home'>
       <Header />
       <Search />
       {initialState.mylist?.length > 0 && (
@@ -39,4 +39,4 @@ const App = () => {
   )
 }
 
-export default App
+export default Home
