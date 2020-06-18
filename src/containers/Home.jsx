@@ -4,13 +4,27 @@ import Search from '../components/Search'
 import Categories from '../components/Categories'
 import Carousel from '../components/Carousel'
 import CarouselItem from '../components/CarouselItem'
+import Header from '../components/Header'
 // eslint-disable-next-line import/no-unresolved
 import '../assets/styles/Home.scss'
 
-const Home = ({ myList, trends, originals }) => {
+const Home = ({ search, myList, trends, originals }) => {
   return (
     <div className='Home'>
-      <Search />
+      <Header />
+      <Search isHome />
+      {search.length > 0 && (
+        <Categories title='Resultados de la busqueda...'>
+          <Carousel>
+            {search.map((item) =>
+              <CarouselItem
+                key={item.id}
+                {...item}
+                isList
+              />)}
+          </Carousel>
+        </Categories>
+      )}
       {myList.length > 0 && (
         <Categories title='Mi lista'>
           <Carousel>
@@ -40,6 +54,7 @@ const Home = ({ myList, trends, originals }) => {
 // Trae cada uno de los elementos que necesito del estado
 const mapStateToProps = (state) => {
   return {
+    search: state.search,
     myList: state.myList,
     trends: state.trends,
     originals: state.originals,

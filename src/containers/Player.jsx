@@ -1,9 +1,9 @@
 /* eslint-disable react/destructuring-assignment */
 import React, { useEffect } from 'react'
 import { connect } from 'react-redux'
-import { getVideoSource } from '../actions'
 import '../assets/styles/components/Player.scss'
 import NotFound from './NotFound'
+import { getVideoSource } from '../actions'
 
 const Player = (props) => {
   // Esto lo manda router al momento de generar la ruta que es en player/:id <- Eso
